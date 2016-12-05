@@ -17,3 +17,5 @@ server.{{server.id}}={{server.host}}:2888:3888
 server.{{loop.index}}={{server}}:2888:3888
 {% endif %}
 {% endfor %}
+
+maxClientCnxns={{ mf2_zookeeper_max_client_connections | default(100) }}
